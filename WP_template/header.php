@@ -4,6 +4,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <title><?php wp_title(); ?> — <?php bloginfo('name'); ?></title>
+    <meta name="viewport" content="width= , initial-scale=1.0">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss_url'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <?php wp_head(); ?>
