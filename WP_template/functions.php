@@ -218,12 +218,12 @@ $title = apply_filters( 'widget_title', $instance['title'] );
   }
  
 }
-add_shortcode( 'mybtn', 'bluebtn_shortcode' );
+add_shortcode( 'mybtn', 'btn_shortcode' );
 
-function bluebtn_shortcode( $atts ){
+function btn_shortcode( $atts ){
   $atts = shortcode_atts( [
     'text' => '',
     
   ], $atts );
-  return '<button class="loadmore slotoload">' . $atts['text'] . '</button>';
+   return '<button onClick="window.open(&apos;/mirror/&apos;);" class="btn">' . $atts['text'] . '</button>';
 }
